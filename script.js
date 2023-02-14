@@ -1,4 +1,5 @@
-// //Задание 1
+ //Задание 1
+
 
 const numbs = [1, 5, 4, 10, 0, 3];
 
@@ -7,21 +8,36 @@ for (let i = 0; i < numbs.length; i++) {
     console.log(numbs[i]);
 }
 
-// //Задание 2
+//Задание 1(ver.2)
 
-const numbs2 = [1, 5, 4, 0, 3];
+let numbs2 = [1, 5, 4, 10, 0, 3];
 
-let searchNumbs2 = numbs2.includes(4);
+for (let item of numbs2) {
+    if (item == 10) break;
+    console.log(item);
+}
 
-console.log(searchNumbs2);
 
-// //Задание 3
+//Задание 2
+
+
+const numbs3 = [1, 5, 4, 0, 3];
+
+let searchNumbs3 = numbs3.includes(4);
+
+console.log(searchNumbs3);
+
+
+//Задание 3
+
 
 let numbsJoin = [1, 3, 5, 10, 20];
 numbsJoin = numbsJoin.join(' ');
 console.log(numbsJoin);
 
+
 //Задание 4
+
 
 const numbersOk = [];
 const numbersEven = [];
@@ -43,7 +59,9 @@ console.log(numbersEven);
 
 //задание 5
 
+
 let arrayJoin = [];
+
 for (let i = 0; i < 3; i++) {
     let subArray = [];
     for (let j = 0; j < 3; j++) {
@@ -53,7 +71,9 @@ for (let i = 0; i < 3; i++) {
 }
 console.log(arrayJoin);
 
+
 // Задание 6
+
 
 let arrNumbers = [1, 1, 1];
 
@@ -71,7 +91,9 @@ for (x = 3; x < 6; x++) {
 
 console.log(arrayShift);
 
+
 // Задание 7
+
 
 let arrSort = [9, 8, 7, 'a', 6, 5];
 arrSort.sort();
@@ -79,14 +101,18 @@ console.log(arrSort);
 arrSort.pop();
 console.log(arrSort);
 
+
 // Задание 8
+
 
 let arrSearch = [9, 8, 7, 6, 5];
 let userAnswer = Number(prompt('Введите число от 1 до 10'));
 let search = arrSearch.includes(userAnswer);
 console.log(search);
 
+
 // Задание 9
+
 
 let lineWord = 'abcdef';
 let wordSplit = lineWord.split('');
@@ -94,7 +120,9 @@ wordSplit.reverse();
 let textJoin = wordSplit.join('');
 console.log(textJoin);
 
+
 // Задание 10
+
 
 let arrArithmetic = [];
 
@@ -108,7 +136,6 @@ function funcAverage(...arrArithmetic) {
     let total = 0;
     for (let item of arrArithmetic) {
         total += item;
-        
     }
     average = total / 6;
     return average;
@@ -116,13 +143,17 @@ function funcAverage(...arrArithmetic) {
 
 console.log(funcAverage(...arrArithmetic));
 
+
 // Задание 11
+
 
 let multiArray = [[1, 2, 3,],[4, 5, 6]];
 let resultArray = [].concat(multiArray[0], multiArray[1]);
 console.log(resultArray);
 
+
 // Задание 12
+
 
 let arr = [];
 for (let i = 1; i <= 10; i++) {
@@ -136,7 +167,4 @@ for (let i = 0; i < arr.length; i++) {
         let sum = arr[i] + arr[i + 1];
         console.log(`Сумма элементов ${i} и ${i + 1} = ${sum}`);
     }
-    
 }
-
-
