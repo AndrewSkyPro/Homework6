@@ -36,28 +36,7 @@ numbsJoin = numbsJoin.join(' ');
 console.log(numbsJoin);
 
 
-//Задание 4
-
-
-const numbersOk = [];
-const numbersEven = [];
-
-for (let i = 0; i < 10; i++) {
-    numbersOk.push(Math.floor(Math.random() * 11));
-}
-
-console.log(numbersOk);
-
-numbersOk.forEach(element => {
-    if (element % 2 == 0) {
-        numbersEven.push(element);
-    }
-});
-
-console.log(numbersEven);
-
-
-//задание 5
+//задание 4
 
 
 let arrayJoin = [];
@@ -72,7 +51,7 @@ for (let i = 0; i < 3; i++) {
 console.log(arrayJoin);
 
 
-// Задание 6
+// Задание 5
 
 
 let arrNumbers = [1, 1, 1];
@@ -92,7 +71,7 @@ for (x = 3; x < 6; x++) {
 console.log(arrayShift);
 
 
-// Задание 7
+// Задание 6
 
 
 let arrSort = [9, 8, 7, 'a', 6, 5];
@@ -102,7 +81,7 @@ arrSort.pop();
 console.log(arrSort);
 
 
-// Задание 8
+// Задание 7
 
 
 let arrSearch = [9, 8, 7, 6, 5];
@@ -111,7 +90,7 @@ let search = arrSearch.includes(userAnswer);
 console.log(search);
 
 
-// Задание 9
+// Задание 8
 
 
 let lineWord = 'abcdef';
@@ -120,8 +99,53 @@ wordSplit.reverse();
 let textJoin = wordSplit.join('');
 console.log(textJoin);
 
+// Задание 9
+
+
+let multiArray = [[1, 2, 3,],[4, 5, 6]];
+let resultArray = [].concat(multiArray[0], multiArray[1]);
+console.log(resultArray);
+
 
 // Задание 10
+
+
+let arr = [];
+for (let i = 1; i <= 10; i++) {
+    arr.push(Math.floor(Math.random() * 10 + 1));
+}
+console.log(arr);
+
+
+for (let i = 0; i < arr.length; i++) {
+    if (i < arr.length - 1) {
+        let sum = arr[i] + arr[i + 1];
+        console.log(`Сумма элементов ${i} и ${i + 1} = ${sum}`);
+    }
+}
+
+
+//Задание 11
+
+
+const numbersOk = [];
+const numbersEven = [];
+
+for (let i = 0; i < 10; i++) {
+    numbersOk.push(Math.floor(Math.random() * 11));
+}
+
+console.log(numbersOk);
+
+numbersOk.forEach(element => {
+    if (element % 2 == 0) {
+        numbersEven.push(element);
+    }
+});
+console.log(numbersEven);
+
+
+// Задание 12
 
 
 let arrArithmetic = [];
@@ -129,8 +153,8 @@ let arrArithmetic = [];
 for (let c = 0; c < 6; c++) {
     arrArithmetic.push(Math.floor(Math.random() * 11));
 }
-
 console.log(arrArithmetic);
+
 
 function funcAverage(...arrArithmetic) {
     let total = 0;
@@ -140,31 +164,11 @@ function funcAverage(...arrArithmetic) {
     average = total / 6;
     return average;
 }
-
 console.log(funcAverage(...arrArithmetic));
 
 
-// Задание 11
 
 
-let multiArray = [[1, 2, 3,],[4, 5, 6]];
-let resultArray = [].concat(multiArray[0], multiArray[1]);
-console.log(resultArray);
 
 
-// Задание 12
 
-
-let arr = [];
-for (let i = 1; i <= 10; i++) {
-    arr.push(Math.floor(Math.random() * 10 + 1));
-}
-
-console.log(arr);
-
-for (let i = 0; i < arr.length; i++) {
-    if (i < arr.length - 1) {
-        let sum = arr[i] + arr[i + 1];
-        console.log(`Сумма элементов ${i} и ${i + 1} = ${sum}`);
-    }
-}
